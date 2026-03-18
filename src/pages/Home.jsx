@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ArticleCard from '../components/ArticleCard';
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SUNYATA PHILOSOPHY SECTION (blended) */}
+      {/* SUNYATA PHILOSOPHY SECTION */}
       <section className="relative py-40" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1507652313519-d4e917fbe7b6?w=1600')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
         <div className="absolute inset-0 bg-brand-dark/90"></div>
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="relative z-10 max-w-4xl mx-auto px-6 text-center">
