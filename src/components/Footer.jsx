@@ -5,15 +5,16 @@ export default function Footer() {
     <>
       <footer className="bg-[#080b14] text-center py-12 border-t border-white/5 relative z-10">
         <div className="max-w-4xl mx-auto px-6">
-          <img src="https://i.ibb.co/FqsxrPKd/Picsart-26-03-18-15-40-21-615.jpg" alt="Logo" className="w-12 h-12 rounded-full mx-auto mb-6 opacity-50 grayscale hover:grayscale-0 transition-all duration-500" />
-          <p className="text-gray-500 font-light mb-2">© {new Date().getFullYear()} The Mind Of Sunyata.</p>
-          <p className="text-brand-accent/50 font-serif italic">Stay aware. Stay awake.</p>
+          <img src="https://images.unsplash.com/photo-1593697909689-bccb2f7f1a9b?w=150&h=150&fit=crop" alt="Logo" className="w-12 h-12 rounded-full mx-auto mb-6 opacity-50 grayscale hover:grayscale-0 transition-all duration-500" />
+          <p className="text-gray-500 font-light mb-2">© {new Date().getFullYear()} The Mind Of Synaesthesia.</p>
+          <p className="text-brand-accent/50 font-serif italic mb-4">Stay aware. Stay awake.</p>
+          <p className="text-gray-600 text-sm">Designed with <i className="fa-solid fa-heart text-brand-accent"></i> by Your Name</p>
         </div>
       </footer>
 
-      {/* Advanced Floating WhatsApp Button */}
+      {/* WhatsApp button (unchanged) */}
       <motion.a 
-        href="https://wa.me/YOUR_PHONE_NUMBER_HERE" 
+        href="https://wa.me/1234567890"
         target="_blank" 
         rel="noopener noreferrer" 
         initial={{ scale: 0 }}
