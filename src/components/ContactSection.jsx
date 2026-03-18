@@ -1,18 +1,12 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-};
-
 export default function ContactSection() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Dummy submission – replace with your own logic
     alert('Thank you for connecting! We will be in touch soon.');
   };
 
@@ -20,10 +14,10 @@ export default function ContactSection() {
     <section id="contact" className="relative py-40" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1499209974431-9c6d7b5b5e5e?w=1600')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <div className="absolute inset-0 bg-brand-dark/80 backdrop-blur-sm"></div>
       <motion.div
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        variants={fadeInUp}
+        transition={{ duration: 0.8 }}
         className="relative z-10 max-w-2xl mx-auto px-6 text-center"
       >
         <i className="fa-solid fa-envelope text-4xl text-brand-accent mb-6 opacity-80"></i>
