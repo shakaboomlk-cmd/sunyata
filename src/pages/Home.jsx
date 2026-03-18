@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <Navbar />
       
-      {/* HERO SECTION with Synaesthesia branding */}
+      {/* HERO SECTION */}
       <section id="home" className="relative min-h-screen flex items-center justify-center pt-20"
                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=1600')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
         <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-brand-dark/60 to-brand-dark/95"></div>
@@ -45,13 +45,13 @@ export default function Home() {
         <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center mt-12">
           <IconHeader />
           <motion.h2 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-tight tracking-tight drop-shadow-2xl">
-            The Mind Of <span className="text-gradient">Synaesthesia</span>
+            The Mind Of <span className="text-gradient">Sunyata</span>
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-gray-300 text-lg md:text-xl max-w-2xl mt-4 leading-relaxed font-light">
-            <span className="font-serif italic text-brand-accent mr-2">Where senses intertwine.</span> <br className="md:hidden" />
-            Explore the cross-sensory integration that shapes perception.
+            <span className="font-serif italic text-brand-accent mr-2">Stay aware. Stay awake.</span> <br className="md:hidden" />
+            Journey into the depths of your mind and recognize the silence between thoughts.
           </motion.p>
-          <SearchBar />
+          <SearchBar placeholder="Search teachings..." />
           <motion.div variants={fadeInUp} className="mt-16 text-gray-400 flex flex-col items-center gap-2 animate-bounce cursor-pointer" onClick={() => document.getElementById('about').scrollIntoView()}>
             <span className="text-xs uppercase tracking-widest">Scroll Down</span>
             <i className="fa-solid fa-chevron-down text-brand-accent"></i>
@@ -71,16 +71,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-brand-dark/80 backdrop-blur-sm"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-6">
           <motion.h3 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-3xl font-serif text-center text-white mb-12">
-            Understanding Synaesthesia
+            Core Teachings
           </motion.h3>
           <div className="grid md:grid-cols-2 gap-8">
             <TextBox
-              title="What is Synaesthesia?"
-              text="Synaesthesia is a unique perceptual experience that involves the blending of sensory modalities, such as sight, sound, touch, taste, and smell. It is not a single condition but rather a spectrum of experiences that can vary greatly from person to person. Synaesthesia is often described as a cross-sensory integration where different senses interact and influence each other."
+              title="What is Sunyata?"
+              text="Sunyata (emptiness) does not mean nothingness. It means that all things are empty of inherent, independent existence. They arise dependently, in connection with everything else. Recognizing this brings freedom from clinging."
             />
             <TextBox
-              title="Neurological Basis"
-              text="Synaesthesia is believed to be caused by abnormal brain activity in certain areas of the brain. These areas are responsible for processing sensory information and integrating it with other sensory inputs. Neuroimaging studies show increased connectivity between sensory regions in synaesthetes."
+              title="The Nature of Mind"
+              text="The mind is like the sky—thoughts are just clouds that pass through. By resting in awareness, we discover the vast, clear space that is our true nature. This is the essence of meditation."
             />
           </div>
           <div className="flex justify-center mt-12">
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SUNYATA PHILOSOPHY SECTION */}
+      {/* PHILOSOPHY SECTION */}
       <section className="relative py-40" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1507652313519-d4e917fbe7b6?w=1600')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
         <div className="absolute inset-0 bg-brand-dark/90"></div>
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="relative z-10 max-w-4xl mx-auto px-6 text-center">
